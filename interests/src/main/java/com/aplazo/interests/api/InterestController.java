@@ -3,6 +3,7 @@ package com.aplazo.interests.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,6 +15,7 @@ import com.aplazo.interests.request.Input;
 import com.aplazo.interests.response.BaseResponse;
 import com.aplazo.interests.service.IInterestService;
 
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/interests")
 public class InterestController {
